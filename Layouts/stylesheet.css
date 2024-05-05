@@ -24,7 +24,7 @@
 
 .collapsible-section
 {
-    text-align: center;
+    text-align: left;
 }
 
 .collapsible-section .content {
@@ -33,14 +33,14 @@
     overflow: hidden;
     opacity: 0;
     transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.5s ease;
-    padding: 0;
+    padding-left: 15%;
 
     display: inline-block;
     text-align: left;
 }
 
 .collapsible-section.expanded .content {
-    max-height: 1500px; /* set to a reasonable max value based on expected content */
+    max-height: 4000px; /* set to a reasonable max value based on expected content */
     opacity: 1;
     margin-bottom: 50px;
 
@@ -64,39 +64,6 @@
     font-variation-settings: "wght" 400;
 }
   
-
-.table-grid {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    column-gap: 10px;
-    row-gap: 10px;
-    min-width: 800px;
-}
-
-.table-grid .entry {
-    display: contents;
-}
-
-.table-grid .date,
-.table-grid .description,
-.table-grid .institution {
-    padding: 5px;
-}
-
-.table-grid .date {
-    text-align: left;
-    color:rgba(0,0,0,.5);
-}
-
-.table-grid .description {
-    text-align: center;
-}
-
-.table-grid .institution {
-    text-align: right;
-}
-
-
 
   .wrapper
   {
@@ -122,9 +89,22 @@
       height:100%;
       position:relative;
       width:66.66%;
+      overflow-y: auto;
+
+/*
+      display: flex;  Enables flexbox 
+      flex-direction: column; /* Stacks children vertically 
+      justify-content: center; /* Centers content vertically */
   }
   
-  
+  .right::-webkit-scrollbar {
+    display: none;
+}
+.right {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
   .name
   {
       background:rgba(0,0,0,.001);
@@ -181,10 +161,10 @@
   
   .inner
   {
-    
       margin:100px auto;
       max-width:975px;
       padding:3em;
+      align-items: center;
   }
   
   .inner h1
@@ -195,7 +175,7 @@
   .inner p
   {
       color:rgba(0,0,0,.5);
-      max-width: 800px;
+      max-width: 700px;
   }
   
   .inner p em
@@ -213,7 +193,7 @@
   {
       list-style-type:none;
       margin-top:-10px;
-      max-width:570px;
+      max-width:800px;
       padding:0;
   }
   
@@ -229,6 +209,7 @@
       text-align:justify;
   }
   
+
   @media screen and (max-width: 48em) {
       .right,.left
       {
