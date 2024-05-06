@@ -28,25 +28,12 @@
 }
 
 .collapsible-section .content {
-
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.5s ease;
     padding-left: 15%;
-
-    display: inline-block;
-    text-align: left;
-}
-
-.collapsible-section.expanded .content {
-    max-height: 4000px; /* set to a reasonable max value based on expected content */
-    opacity: 1;
     margin-bottom: 50px;
-
     display: inline-block;
     text-align: left;
 }
+
 
 
  .title {
@@ -56,7 +43,7 @@
     text-align: center;
     text-transform: uppercase;
     color: black;
-    font-variation-settings: "wght" 100;
+    font-variation-settings: "wght" 200;
     transition: all 1.5s;
 }
   
@@ -64,7 +51,6 @@
     font-variation-settings: "wght" 400;
 }
   
-
   .wrapper
   {
       height:100%;
@@ -72,7 +58,7 @@
   
   .left
   {
-      background-color:rgba(0,0,0,.025);
+      background-color:rgba(15, 15, 15, 0.15);
       border-right:1px solid rgba(0,0,0,.05);
       float:right;
       height:100%;
