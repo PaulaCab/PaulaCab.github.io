@@ -175,15 +175,20 @@
       max-width:800px;
       padding:0;
   }
-  
+   
+  .skill-set
+  {
+    margin-top:10px;
+  }
+
   .skill-set li
   {
       background:rgba(0,0,0,.75);
-      border-radius:5px;
+      border-radius:4px;
       color:#FFF;
       display:inline-block;
       list-style:none;
-      margin:30px 15px 0 0;
+      margin:5px 15px 0 0;
       padding:8px;
       text-align:justify;
   }
