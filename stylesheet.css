@@ -165,6 +165,16 @@
       margin:10px auto;
   }
   
+
+  a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
   @media screen and (max-width: 75em) {
     body { font-size: 16px; }
     p { font-size: 14px; }
@@ -173,6 +183,10 @@
 @media screen and (max-width: 60em) {
     body{font-size: 14px;}
     p { font-size: 13px; }
+
+    .collapsible-section .content {
+        padding-left: 1%;
+    }
 }
 
 @media screen and (max-width: 48em) {
