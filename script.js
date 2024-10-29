@@ -4,6 +4,12 @@ const totalSlides = slides.length;
 
 function showSlide(index) {
     slides.forEach((slide, i) => {
+        const video = slide.querySelector('video');
+        if (video) {
+            video.pause();
+            video.currentTime = 0; 
+        }
+        
         slide.classList.remove('active');
         if (i === index) {
             slide.classList.add('active');

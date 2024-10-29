@@ -45,6 +45,11 @@ section{
     margin-bottom: 2.5rem;
 }
 
+.round_picture{
+    border-radius: 50%; 
+    object-fit: cover;
+}
+
 .section_text
 {
     align-self: center;
@@ -98,6 +103,7 @@ section{
 .section_title{
     text-align: center;
     font-size: 3rem;
+    margin-top: 1rem;
     margin-bottom: 3rem;
 }
 
