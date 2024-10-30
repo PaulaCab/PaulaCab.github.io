@@ -34,7 +34,7 @@ section{
     height: 40vh;
     background-image: url('./assets/header.png');
     background-repeat: repeat-x;
-    background-size: contain;
+    background-size: auto 100%;
 }
 
 .profile_picture {
@@ -46,6 +46,8 @@ section{
 }
 
 .round_picture{
+    width: 100%;
+    height: 100%;
     border-radius: 50%; 
     object-fit: cover;
 }
@@ -100,6 +102,10 @@ section{
 
 /*  P R O J E C T S  */
 
+#student_projects{
+    margin-bottom: 4rem;
+}
+
 .section_title{
     text-align: center;
     font-size: 3rem;
@@ -112,6 +118,7 @@ section{
     justify-content: center;
     align-items: center;
     gap: 40px;
+    flex-wrap: wrap;
 }
 
 .project {
@@ -208,23 +215,22 @@ section{
 }
 
 .description {
-    padding: 40px 400px;
+    padding: 40px 20%;
     font-size: 1.7em;
     line-height: 1.6;
     color: #555;
+    text-align: center;
 }
 
 .description-container {
     max-width: 800px; 
     margin: 0 auto;
-    text-align: center;
 }
 
 .store_btn {
-    position: absolute;
+    position: relative;
+    display: inline-block;
     margin-top: 50px;
-    margin-left: 25%;
-    margin-right: 25%;
     font-weight: 800;
     font-size: 0.6em;
     text-decoration: none;
@@ -280,18 +286,17 @@ section{
     transform: translateY(-50%);
     color: rgb(100,100,100);
     background: none;
-    border: none; /* Quita el borde */
-    padding: 15px; /* Tamaño del botón */
+    border: none; 
+    padding: 15px; 
     cursor: pointer;
     font-size: 2rem;
-    transition: color 0.3s ease, transform 0.3s ease; /* Efecto de hover */
-    z-index: 2; /* Asegura que estén encima de la imagen */
-    outline: none; /* Quita el borde de enfoque */
+    transition: color 0.3s ease, transform 0.3s ease; 
+    z-index: 2; 
+    outline: none; 
 }
 .carousel-control:hover {
     color: rgb(160,100,255);
 }
-
 
 .prev {
     left:-50px;
@@ -299,4 +304,133 @@ section{
 
 .next {
     right:-50px;
+}
+
+/*  M E D I A   Q U E R I E S  */
+
+@media (max-width: 768px) {
+    #profile {
+        flex-direction: column;
+        gap: 0.5rem;
+        height: auto;
+        padding: 2rem 0.5rem;
+    }
+
+    .profile_picture {
+        height: 150px;
+        width: 150px;
+        margin-bottom: 0.5rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .section_text_1 {
+        font-size: 1.2rem;
+    }
+
+    .section_title {
+        font-size: 2rem;
+        margin: 1.5rem 0;
+    }
+
+    .btn_color {
+        width: 6rem;
+        padding: 0.5rem;
+    }
+
+    .projects_container {
+        flex-direction: column; 
+        align-items: center;   
+        gap: 20px;
+    }
+
+    .project {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .project_text {
+        font-size: 1.5rem;
+    }
+        
+    /* pages */
+    
+    .project_title {
+        font-size: 2.5em; 
+        top: 20%;
+        padding: 10px;
+    }
+
+    .description {
+        padding: 30px; 
+        margin-bottom: 10px;
+        font-size: 1.2em; 
+    }
+
+    .store_btn {
+        width: auto;
+        padding: 0.5rem;
+        margin-top: 2rem;
+    }
+
+    .showcase {
+        height: auto; 
+        padding-bottom: 2rem;
+    }
+
+    .carousel {
+        width: 80%;
+    }
+
+    .carousel-control {
+        font-size: 1.5rem; 
+    }
+
+    .carousel-item video {
+        width: 100%; 
+        height: auto; 
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .section_text_1 {
+        font-size: 1rem;
+    }
+
+    .section_title {
+        font-size: 1.8rem;
+    }
+
+    .btn_color {
+        width: 5rem;
+        padding: 0.4rem;
+        font-size: 0.9rem;
+    }
+
+    .project_text {
+        font-size: 1.2rem;
+    }
+
+    /* pages */
+
+    .project_title {
+        font-size: 1em;
+        padding: 5px;
+    }
+
+    .description {
+        padding: 10px; 
+        font-size: 1em; 
+    }
+
+    .store_btn {
+        font-size: 0.8em; 
+        padding: 0.6rem; 
+    }
 }
