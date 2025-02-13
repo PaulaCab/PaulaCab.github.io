@@ -1,0 +1,63 @@
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="IE-edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href='stylesheet.css' rel='stylesheet' />
+</head>
+
+<body>
+<header class="project_header">
+  <a href="index.html" class="home_btn">Home</a>
+</header>
+<section id="cover">
+  <img src="./assets/rogue_banner.png" class="cover_img">
+  <div class="project_title">
+    <h1 >ROGUE-PALOMA</h1>
+  </div>
+</section>
+
+<section class="description">
+  <div class="description_container">
+    <p>This project is a prototype of a roguelike game featuring procedural level generation, created in collaboration with another developer. The game dynamically creates unique dungeon layouts for each playthrough, ensuring an unpredictable experience.</p>
+    <br>
+    <p>For this proptotype, I developed a level editing tool in Unity to organize and store rooms used in procedural generation. The tool allows saving multiple room lists, where the room's size must be configured. For each room, three tilemap layers are stored: the background, the walls, and the areas where enemies or objects can spawn. 
+      The tool also marks the sides where rooms will connect, helping the level designer leave the necessary spaces open.</p>
+    <br>
+    <p>My contributions:</p>
+    <ul>
+      <li>Procedural generation implementation</li>
+      <li>Tilemap room editor tool</li>
+      <li>User interface implementation</li>
+      <li>Level design</li>
+    </ul>  </div>
+  <a href="./assets/roguelike.rar" download="roguelike.rar" target="_blank" class="store_btn">
+    BUILD
+  </a>
+</section>
+<section class="showcase">
+  <div class="carousel">
+    <div class="carousel-item active">
+      <img class="carousel-content" src="./assets/rogue_1.jpg" alt="Imagen 1">
+    </div>
+    <div class="carousel-item">
+      <video controls width="700">
+        <source src="./assets/rogue_clip.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+      </video>
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-content" src="./assets/rogue_2.jpg" alt="Imagen 2">
+    </div>
+    <div class="carousel-item">
+      <img class="carousel-content" src="./assets/rogue_3.jpg" alt="Imagen 3">
+    </div>
+    <!-- Botones de navegación -->
+    <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+    <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

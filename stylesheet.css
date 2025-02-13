@@ -219,12 +219,13 @@ section{
     font-size: 1.7em;
     line-height: 1.6;
     color: #555;
-    text-align: center;
+    text-align: left;
 }
 
-.description-container {
-    max-width: 800px; 
-    margin: 0 auto;
+
+.list_container {
+    list-style-position: outside; /* Ensures bullets stay outside */
+    padding-left: 20px;
 }
 
 .store_btn {
@@ -368,6 +369,14 @@ section{
         margin-bottom: 10px;
         font-size: 1.2em; 
     }
+
+    .list_container {
+        text-align: left !important;
+        display: block !important;
+        margin: 0 auto !important;
+        max-width: 600px; /* Adjust based on your layout */
+    }
+
 
     .store_btn {
         width: auto;
