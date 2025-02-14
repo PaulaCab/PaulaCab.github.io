@@ -110,7 +110,9 @@ section{
     text-align: center;
     font-size: 3rem;
     margin-top: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+    line-height: 1.7;
+    color: #555;
 }
 
 .projects_container {
@@ -216,8 +218,8 @@ section{
 
 .description {
     padding: 40px 20%;
-    font-size: 1.7em;
-    line-height: 1.6;
+    font-size: 1.4em;
+    line-height: 1.7;
     color: #555;
     text-align: left;
 }
