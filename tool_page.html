@@ -1,0 +1,55 @@
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="IE-edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href='stylesheet.css' rel='stylesheet' />
+</head>
+
+<body>
+<header class="project_header">
+  <a href="index.html" class="home_btn">Home</a>
+</header>
+<section id="cover">
+  <img src="./assets/tool_banner.png" class="cover_img">
+  <div class="project_title">
+    <h1 >DIALOGUE EDITOR</h1>
+  </div>
+</section>
+
+<section class="description">
+  <div class="description_container">
+    <p>A custom-built <b>dialogue editing tool</b> in UE5 developed using <b>Slate</b>, designed to support the creation and management of branching conversations in a structured, text-based format. This tool allows users to:</p>
+    <br>
+    <ul>
+      <li>Create and organize multiple conversations, each composed of individual dialogue lines.</li>
+      <li>Add responses to any line, enabling flexible branching logic for interactive storytelling.</li>
+      <li>Assign a character to each line, along with a selected emotional state to reflect tone.</li>
+      <li>Easily navigate, edit, and expand dialogue flows through a clean, structured editor layout.</li>
+    </ul>  </div>
+  <br>
+  <p>The project served as a way to deepen my understanding of Slate’s customization capabilities, especially around nested data handling, dynamic form inputs, and controlled content editing. It was designed with simplicity and clarity in mind, making it a practical solution for small-scale narrative tools, prototyping interactive dialogue, or experimenting with branching logic in a focused, text-based interface.</p>
+</section>
+<section class="showcase">
+  <div class="carousel">
+    <div class="carousel-item active">
+      <video controls width="700">
+        <source src="./assets/tool_clip_1.mp4" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+    </div>
+    <div class="carousel-item">
+      <video controls width="700">
+        <source src="./assets/tool_clip_2.mp4" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+    </div>
+    <!-- Botones de navegación -->
+    <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+    <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
